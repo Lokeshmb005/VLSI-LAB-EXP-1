@@ -1,13 +1,13 @@
 
-SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS
+**SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS**
 
-AIM: 
+**AIM:** 
 To simulate Logic Gates ,Adders and Subtractors using Vivado 2023.2.
 
-APPARATUS REQUIRED: 
+**APPARATUS REQUIRED:**
 VIVADO 2023.2
 
-PROCEDURE: 
+**PROCEDURE:** 
 ```
 1. Open Vivado: Launch Xilinx Vivado software on your computer.
 
@@ -27,13 +27,12 @@ PROCEDURE:
 
 9. View Results: After the simulation completes, you can view waveforms, debug signals, and analyze the behavior of your design.
 ```
-LOGIC GATES
 
-LOGIC DIAGRAM
+**LOGIC DIAGRAM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/fa4a02e5-e487-4993-add9-0fc9130d2399)
 
-VERILOG CODE 
+**VERILOG CODE** 
 ```
 module logicgate(a,b,andgate,orgate,nandgate,norgate,xorgate,xnorgate,notgate);
 input a,b;
@@ -48,18 +47,18 @@ not(notgate,a);
 endmodule
 ```
 
-OUTPUT WAVEFORM
+**OUTPUT WAVEFORM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/0860f246-c179-43a9-87f8-401e52e093cb)
 
 
-HALF ADDER
+**HALF ADDER**
 
-LOGIC DIAGRAM
+**LOGIC DIAGRAM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/9e6b6d3d-73e4-4668-8bce-ad710dc79f1b)
 
-VERILOG CODE
+**VERILOG CODE**
 ```
 module half_adder(a,b,sum,carry);
 input a,b;
@@ -70,17 +69,17 @@ endmodule
 
 ```
 
-OUTPUT WAVEFORM
+**OUTPUT WAVEFORM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/8b013ca6-ce21-4072-98cd-0e58ed642b8d)
 
-FULL ADDER
+**FULL ADDER**
 
-LOGIC DIAGRAM
+**LOGIC DIAGRAM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/370791c7-9429-4a69-a027-22c12e235fd5)
 
-VERILOG CODE 
+**VERILOG CODE**
 ```
 module fulladder(a,b,c,sum,carry);
 input a,b,c;
@@ -93,18 +92,18 @@ and(w3,a,b);
 or(carry,w2,w3);
 endmodule
 ```
-OUTPUT WAVEFORM
+**OUTPUT WAVEFORM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/ae2a9aa7-c856-45c8-b8a8-9d55428d3f89)
 
-HALF SUBTRACTOR
+**HALF SUBTRACTOR**
 
-LOGIC DIAGRAM
+**LOGIC DIAGRAM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/4df410ca-40cb-457a-a7e7-08f72b5b4833)
 
 
-VERILOG CODE 
+**VERILOG CODE**
 ```
 module halfsub(a,b,diff,borrow);
 input a,b;
@@ -113,17 +112,17 @@ xor(diff,a,b);
 and(borrow,~a,b);
 endmodule
 ```
-OUTPUT WAVEFORM
+**OUTPUT WAVEFORM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/5b4b5d80-2a60-47f1-98e7-692736d1fb74)
 
-FULL SUBTRACTOR
+**FULL SUBTRACTOR**
 
-LOGIC DIAGRAM
+**LOGIC DIAGRAM**
 
 ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/e3b6b6c2-6340-4eeb-802a-9bd08394639d)
  
-VERILOG CODE 
+**VERILOG CODE** 
 ```
 module fs(a,b,bin,d,bout);
 input a,b,bin;
@@ -136,18 +135,18 @@ and(w3,~w1,bin);
 or(bout,w3,w2);
 endmodule
 ```
-OUTPUT WAVEFORM
+**OUTPUT WAVEFORM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/76488ae6-1f71-4bbc-868a-84aa4d1d94e0)
 
 
-RIPPLE CARRY ADDER
+**RIPPLE CARRY ADDER**
 
-LOGIC DIAGRAM
+**LOGIC DIAGRAM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/f961ac8c-a557-4309-96a2-2b16a8bc8321)
 
-VERILOG CODE 
+**VERILOG CODE** 
 ```
 module fulladder(a,b,c,sum,carry);
 input a,b,c;
@@ -177,7 +176,7 @@ fulladder f8(a[7], b[7], w[7], s[7], cout);
 endmodule
 ```
 
-OUTPUT WAVEFORM
+**OUTPUT WAVEFORM**
 
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/6ca07915-f6d5-48ce-b000-875d8918bafa)
 
