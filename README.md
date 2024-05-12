@@ -181,5 +181,6 @@ endmodule
  ![image](https://github.com/Lokeshmb005/VLSI-LAB-EXP-1/assets/159941167/6ca07915-f6d5-48ce-b000-875d8918bafa)
 
 **RESULT:**
-SIMULATION OF LOGIC GATES ,ADDERS AND SUBTRACTORS ARE VERIFIED
+
+ Thus the simulation and implementation of Logic Gates, Adders and Subtractors is done and outputs are verified.
 
